@@ -10,9 +10,11 @@ When you open the page today's date is displayed and you can input various task 
 HTML
 CSS
 Javacript
-### Javacript Library
+## Javacript Library
 Bootstrap
+
 jQuery
+
 moment
 
 ## Website
@@ -22,4 +24,4 @@ https://honeysanghani.github.io/work-day-scheduler/
 https://github.com/HoneySanghani/work-day-scheduler.git
 
 ## Output
-![image](https://user-images.githubusercontent.com/48147515/126907723-0f1c9423-958e-4754-9058-44818bffc1c8.png)
+![image](https://user-images.githubusercontent.com/48147515/126907757-b123bf37-7c11-4d37-a30d-510b8a12ed9a.png)
