@@ -1,8 +1,7 @@
 //display current date for the page
 var currentDate=moment().format("dddd, MMMM Do");     ;
 var displayDate=document.querySelector("#currentDay");
-var currentTime=moment().hours();
-console.log(currentTime);
+console.log(getHour);
 displayDate.innerHTML=currentDate;
 //save task to local storage
 $(document).ready(function(){
@@ -12,6 +11,26 @@ $(document).ready(function(){
         console.log(task,time);
         localStorage.setItem('time','task');
     })
+})
+$.each($("textarea"),function(){
+    let hourEl =parseInt($(this).parent().attr('id'));
+    if (getHour > hourEl) {
+        $(this).addClass("past");
+        $(this).removeClass("present");
+        $(this).removeClass("future");
+      } else if (getHour === hourEl) {
+        $(this).addClass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+      } else if (getHour < hourEl) {
+        $(this).addClass("future");
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+      } else {
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+      }
 })
 
 // var tasks = JSON.parse(localStorage.getItem("tasks"));
